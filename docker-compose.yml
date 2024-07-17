@@ -1,0 +1,16 @@
+version: "3"
+networks:
+  rivendell:
+    driver: bridge
+services:
+  fims-service:
+    container_name: node-app-service
+    build: ./app-service
+    volumes:
+      - ${HOME}/logs/node-app-service:/home/node/app/logs
+    ports:
+      - "3001:3001"
+    command: ["sh", "run.sh"]
+    restart: unless-stopped
+    networks:
+      - rivendell

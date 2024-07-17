@@ -1,5 +1,5 @@
 {
-  "name": "node-express-mongodb",
+  "name": "node-app-service",
   "version": "1.0.0",
   "description": "Node.js Restful CRUD API with Node.js, Express and MongoDB",
   "type": "module",

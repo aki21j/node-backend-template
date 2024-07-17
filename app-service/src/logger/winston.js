@@ -14,18 +14,18 @@ const newdate = `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`
 const options = {
   info: {
     level: "info",
-    dirname: "logs/combined",
+    dirname: "logs",
     json: true,
     handleExceptions: true,
     datePattern: "YYYY-MM-DD-HH",
-    filename: `combined-${newdate}.log`,
+    filename: `combined-outerr.log`,
   },
   error: {
     level: "error",
-    dirname: "logs/error",
+    dirname: "logs",
     json: true,
     handleExceptions: true,
-    filename: `error-${newdate}.log`,
+    filename: `err.log`,
   },
   console: {
     level: "debug",

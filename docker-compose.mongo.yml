@@ -1,0 +1,12 @@
+version: "3"
+services:
+  mongodb:
+    image: mongo:3.2.21-jessie
+    volumes:
+      - ${HOME}/data/db:/data/db
+      - ${HOME}/data/configdb:/data/configdb
+      - ${HOME}/data/fims:/data/fims
+    ports:
+      - "27017:27017"
+    networks:
+      - rivendell
