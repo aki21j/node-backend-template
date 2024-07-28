@@ -1,4 +1,4 @@
-FROM keymetrics/pm2:10-alpine
+FROM keymetrics/pm2:18-alpine
 
 ENV HOME=/home/node
 
@@ -34,7 +34,7 @@ RUN cp $HOME/tmp/yarn.lock $HOME/app/yarn.lock
 RUN cd $HOME/app && ln -s $HOME/tmp/node_modules
 
 # build project
-RUN cd $HOME/app && npm run build
+# RUN cd $HOME/app && yarn build
 
 # copy pm2 config 
 COPY pm2.json ./

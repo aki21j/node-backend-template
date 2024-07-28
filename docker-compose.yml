@@ -3,7 +3,7 @@ networks:
   rivendell:
     driver: bridge
 services:
-  fims-service:
+  node-backend:
     container_name: node-app-service
     build: ./app-service
     volumes:

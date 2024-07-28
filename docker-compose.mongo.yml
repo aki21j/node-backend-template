@@ -1,11 +1,12 @@
 version: "3"
 services:
   mongodb:
-    image: mongo:3.2.21-jessie
+    image: mongo:latest
+    platform: linux/arm64/v8
     volumes:
       - ${HOME}/data/db:/data/db
       - ${HOME}/data/configdb:/data/configdb
-      - ${HOME}/data/fims:/data/fims
+      - ${HOME}/data/test-template-db:/data/test-template-db
     ports:
       - "27017:27017"
     networks:

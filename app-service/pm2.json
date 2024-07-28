@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "node-app-service",
-      "script": "./dist/main.js",
+      "script": "./src/main.js",
       "instances": "1",
       "exec_mode": "cluster",
       "merge_logs": true,
